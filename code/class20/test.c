@@ -31,13 +31,15 @@
 //     return 0;
 // }
 
+//register寄存器
+// int main()
+// {
+//     register int num = 3;//建议3存放在寄存器中（最后由编译器决定）
+//     system("pause");
+//     return 0;
+// }
 
-int main()
-{
-    register int num = 3;//建议3存放在寄存器中
-    system("pause");
-    return 0;
-}
+
 // int main()
 // {
 //     system("pause");
