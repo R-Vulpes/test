@@ -22,11 +22,19 @@
 //     return 0;
 // }
 
+// int main()
+// {
+//     extern int g_val;//不知道为什么err
+//     // int g_val = 1;
+//     printf("%d\n", g_val);
+//     system("pause");
+//     return 0;
+// }
+
+
 int main()
 {
-    extern int g_val;//不知道为什么err
-    // int g_val = 1;
-    printf("%d\n", g_val);
+    register int num = 3;//建议3存放在寄存器中
     system("pause");
     return 0;
 }
