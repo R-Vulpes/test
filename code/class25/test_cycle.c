@@ -56,16 +56,51 @@
 // }
 
 // 输出1-100的奇数
+// int main()
+// {
+//     int i = 0;
+//     while (i < 100)
+//     {
+//         if (i % 2 == 1)
+//             printf("%d ", i);
+//         i++;
+//     }
+
+//     system("pause");
+//     return 0;
+// }
+
+// switch语句
 int main()
 {
-    int i = 0;
-    while (i < 100)
+    int day = 0;
+    scanf("%d", &day);
+    switch (day)
+    // switch(必须为 整型表达式),case决定入口，break决定出口
+    // case后面必须为 整型常量表达式（字符也行，ascii码值为整）
     {
-        if (i % 2 == 1)
-            printf("%d ", i);
-        i++;
+    case 1:
+        printf("星期一\n");
+        break;
+    case 2:
+        printf("星期二\n");
+        break;
+    case 3:
+        printf("星期三\n");
+        break;
+    case 4:
+        printf("星期四\n");
+        break;
+    case 5:
+        printf("星期五\n");
+        break;
+    case 6:
+        printf("星期六\n");
+        break;
+    case 7:
+        printf("星期日\n");
+        break;
     }
-
     system("pause");
     return 0;
 }
