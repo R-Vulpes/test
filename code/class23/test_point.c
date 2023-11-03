@@ -9,26 +9,26 @@
 // 64位机器上的地址：64bit位-8byte，指针变量的大小是8个字节
 //如printf("%zu\n",sizeof(char*));
 
-// int main()
-// {
-//     int a = 10;
-//     &a;
-//     printf("%p\n", &a);
-//     //%p打印地址
+int main()
+{
+    int a = 10;
+    &a;
+    printf("%p\n", &a);
+    //%p打印地址
 
-//     int* p = &a;
-//     //*说明p为指针变量；int说明p指向的对象是指针类型
+    int* p = &a;
+    //*说明p为指针变量；int说明p指向的对象是指针类型
 
-//     printf("%p\n", p);
+    printf("%p\n", p);
 
-//     *p = 20;
-//     //解引用操作符，找到p指向的对象
+    *p = 20;
+    //解引用操作符，找到p指向的对象
 
-//     printf("%d\n", a);
+    printf("%d\n", *p);
 
-//     system("pause");
-//     return 0;
-// }
+    system("pause");
+    return 0;
+}
 
 // 连续初始化
 // int main()
