@@ -22,8 +22,16 @@
 
 int main()
 {
-    int c = getchar();
-    putchar(c);
+    // int c = getchar();
+    // // EOF;//end of file
+    // printf("%c\n",c);
+    // putchar(c);
+
+    int ch = 0;
+    while((ch = getchar()) != EOF)
+    {
+        putchar(ch);
+    }
     system("pause");
-    return 0;
+    // return 0;
 }
