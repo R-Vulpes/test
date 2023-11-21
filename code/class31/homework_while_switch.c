@@ -52,12 +52,22 @@
 // }
 
 // 3、BC11_学生基本信息输入输出
+// int main()
+// {
+//     int id = 0;
+//     float c = 0.0f, math = 0.0f, eng = 0.0f;
+//     scanf("%d;%f,%f,%f", &id, &c, &math, &eng);
+//     printf("The each subject score of No. %d is %.2f, %.2f, %.2f.\n", id, c, math, eng);
+//     system("pause");
+//     return 0;
+// }
+
+// 4、BC9_printf的返回值
 int main()
 {
-    int id = 0;
-    float c = 0.0f, math = 0.0f, eng = 0.0f;
-    scanf("%d;%f,%f,%f", &id, &c, &math, &eng);
-    printf("The each subject score of No. %d is %.2f, %.2f, %.2f.\n", id, c, math, eng);
+    // printf("Hello world!\n");不需要此行，n赋值的同时，printf也会运行
+    int n = printf("Hello world!");
+    printf("\n%d", n);
     system("pause");
     return 0;
 }
