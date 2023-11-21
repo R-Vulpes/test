@@ -27,11 +27,30 @@ int main()
     // printf("%c\n",c);
     // putchar(c);
 
-    int ch = 0;
-    while((ch = getchar()) != EOF)
+    // int ch = 0;
+    // while((ch = getchar()) != EOF)
+    // {
+    //     putchar(ch);
+    // }
+
+    // 假设密码是一个字符串
+    char password[20]={0};
+    printf("请输入密码:>");
+    scanf("%s", password);
+    printf("请确认密码(Y/N):>");
+
+    getchar();//读取\n
+
+    int sure = getchar();
+    if ('Y' == sure)
     {
-        putchar(ch);
+        printf("YES\n");
     }
+    else
+    {
+        printf("NO\n");
+    }
+
     system("pause");
-    // return 0;
+    return 0;
 }
