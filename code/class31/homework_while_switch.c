@@ -63,11 +63,68 @@
 // }
 
 // 4、BC9_printf的返回值
+// int main()
+// {
+//     // printf("Hello world!\n");不需要此行，n赋值的同时，printf也会运行
+//     int n = printf("Hello world!");
+//     printf("\n%d", n);
+//     system("pause");
+//     return 0;
+// }
+
+// 5、BC131_转义字符"\"
+// int main()
+// {
+//     printf("printf(\"Hello world!\\n\");\n");
+//     printf("cout << \"Hello world!\" << endl;\n");
+//     system("pause");
+//     return 0;
+// }
+
+// 6、BC59_四个数找最大数
+// int max(int a, int b)
+// {
+//     if (a < b)
+//     {
+//         return b;
+//     }
+//     else
+//     {
+//         return a;
+//     }
+// }
+// int main()
+// {
+//     int arr[4] = {0};
+//     int i = 0;
+//     int MAX = 0;
+//     while (i < 4)
+//     {
+//         scanf("%d", &arr[i]);
+//         MAX = max(MAX, arr[i]);
+//         i++;
+//     }
+//     printf("%d\n", MAX);
+//     system("pause");
+//     return 0;
+// }
+
+// 7、BC27_给定半径求球体积
 int main()
 {
-    // printf("Hello world!\n");不需要此行，n赋值的同时，printf也会运行
-    int n = printf("Hello world!");
-    printf("\n%d", n);
+    float r = 0.0f;
+    float pi = 3.1415926;
+    float V = 0.0f;
+    scanf("%f", &r);
+    V = 4.0 / 3 * pi * r * r * r;
+    printf("%.3f\n", V);
+    // double定义的代码
+    // double r = 0.0;
+    // double pi = 3.1415926;
+    // double V = 0.0;
+    // scanf("%lf", &r);
+    // V = 4.0 / 3 * pi * r * r * r;
+    // printf("%.3lf\n", V);
     system("pause");
     return 0;
 }
