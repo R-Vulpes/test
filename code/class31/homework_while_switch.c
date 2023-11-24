@@ -110,21 +110,33 @@
 // }
 
 // 7、BC27_给定半径求球体积
+// int main()
+// {
+//     float r = 0.0f;
+//     float pi = 3.1415926;
+//     float V = 0.0f;
+//     scanf("%f", &r);
+//     V = 4.0 / 3 * pi * r * r * r;
+//     printf("%.3f\n", V);
+//     // double定义的代码
+//     // double r = 0.0;
+//     // double pi = 3.1415926;
+//     // double V = 0.0;
+//     // scanf("%lf", &r);
+//     // V = 4.0 / 3 * pi * r * r * r;
+//     // printf("%.3lf\n", V);
+//     system("pause");
+//     return 0;
+// }
+
+// 8、BC25_计算BMI指数
 int main()
 {
-    float r = 0.0f;
-    float pi = 3.1415926;
-    float V = 0.0f;
-    scanf("%f", &r);
-    V = 4.0 / 3 * pi * r * r * r;
-    printf("%.3f\n", V);
-    // double定义的代码
-    // double r = 0.0;
-    // double pi = 3.1415926;
-    // double V = 0.0;
-    // scanf("%lf", &r);
-    // V = 4.0 / 3 * pi * r * r * r;
-    // printf("%.3lf\n", V);
+    int w = 0, h = 0;
+    float BMI = 0.0f;
+    scanf("%d %d", &w, &h);
+    BMI = w / ((h / 100.0) * (h / 100.0));
+    printf("%.2f\n", BMI);
     system("pause");
     return 0;
 }
