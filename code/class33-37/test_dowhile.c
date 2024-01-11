@@ -120,7 +120,7 @@
 //     char arr2[]="#################";
 //     int sz = strlen(arr2);
 //     // 注意：sizeof算字符数组的大小，会包含'\0'
-//     // int sz = sizeof(arr2) / sizeof(arr2[0]);
+//     // int sz = sizeof(arr2) / sizeof(arr2[0])-1;
 //     int left = 0;
 //     int right = sz - 1;
 //     while (left <= right)
@@ -129,7 +129,7 @@
 //         arr2[right] = arr1[right]; 
 //         printf("%s\n", arr2);
 //         Sleep(1000);//停顿1000ms，即1s
-//         system("cls");//system是一个库函数，可以执行系统命令
+//         system("cls");//system是一个库函数，可以执行系统命令，cls清除屏幕
 //         left++;
 //         right--;
 //     }
