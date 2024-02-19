@@ -53,69 +53,67 @@
 // }
 
 
-// 猜数字游戏：电脑产生一个随机数（1-100），猜数字，要反馈猜大了、猜小了，直到猜对结束
- void menu()
-{
-    printf("********************\n");
-    printf("*******1.play*******\n");
-    printf("*******0.exit*******\n");
-    printf("********************\n");
-}
+// // 猜数字游戏：电脑产生一个随机数（1-100），猜数字，要反馈猜大了、猜小了，直到猜对结束
+//  void menu()
+// {
+//     printf("********************\n");
+//     printf("*******1.play*******\n");
+//     printf("*******0.exit*******\n");
+//     printf("********************\n");
+// }
 
- int game()
-{
-    printf("猜数字：");
+//  int game()
+// {
+//     printf("猜数字：");
 
-    int random = rand()%100+1;//0~RAND_MAX(32767),%100后余数肯定在0~99，+1则到100
-    int guess = 0;
-    scanf("%d", &guess);
-    while(guess != random)
-    {
-        if(guess < random)
-        {
-            printf("猜小了\n");
-        }
-        else if (guess > random)
-        {
-            printf("猜大了\n");
-        }
-        printf("请重猜:");
-        scanf("%d", &guess);
-    }
-    printf("猜对了，这个数字是：%d\n", guess);
-}
+//     int random = rand()%100+1;//0~RAND_MAX(32767),%100后余数肯定在0~99，+1则到100
+//     int guess = 0;
+//     scanf("%d", &guess);
+//     while(guess != random)
+//     {
+//         if(guess < random)
+//         {
+//             printf("猜小了\n");
+//         }
+//         else if (guess > random)
+//         {
+//             printf("猜大了\n");
+//         }
+//         printf("请重猜:");
+//         scanf("%d", &guess);
+//     }
+//     printf("猜对了，这个数字是：%d\n", guess);
+// }
 
-int main()
-{   
-    int choice = 0;
-    //srand是使用rand()前调用的函数，设置起点，输入参数为正整数。只用在主函数调用一次
-    //time()输入指针值，返回时间戳
-    //unsigned int 定义无符号整数
-    srand((unsigned int)time(NULL));
-    do 
-    {
-        menu();
-        printf("请选择：>");
-        scanf("%d",&choice);
-        switch(choice)
-        {
-            case 1:
-                game();
-                break;
-            case 0:
-                printf("退出游戏\n");
-                break;
-            default:
-                printf("选择错误，请重新选择\n");
-                break;
-        }
-    }while(choice);
+// int main()
+// {   
+//     int choice = 0;
+//     //srand是使用rand()前调用的函数，设置起点，输入参数为正整数。只用在主函数调用一次
+//     //time()输入指针值，返回时间戳
+//     //unsigned int 定义无符号整数
+//     srand((unsigned int)time(NULL));
+//     do 
+//     {
+//         menu();
+//         printf("请选择：>");
+//         scanf("%d",&choice);
+//         switch(choice)
+//         {
+//             case 1:
+//                 game();
+//                 break;
+//             case 0:
+//                 printf("退出游戏\n");
+//                 break;
+//             default:
+//                 printf("选择错误，请重新选择\n");
+//                 break;
+//         }
+//     }while(choice);  
+//     system("pause");
+//     return 0;
+// }
 
-
-    
-    system("pause");
-    return 0;
-}
 
 // int main()
 // {
