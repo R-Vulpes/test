@@ -71,6 +71,7 @@ int main()
     printf("before,a=%d,b=%d\n", a,b);
     // a,b为实参，当实参传递给形参的时候，形参是实参的一份临时拷贝
     // 对形参的修改不会影响实参
+    // 实参：真实传递给函数的参数
     // change(a,b);——错误
     change(&a,&b);
     printf("now,a=%d,b=%d", a,b);
